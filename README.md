@@ -2,8 +2,6 @@
 
 ### A flexible data coder for encoding and decoding formats like JSON, YAML, and more.
 
----
-
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sunrise-php/coder/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/sunrise-php/coder/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/sunrise-php/coder/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/sunrise-php/coder/?branch=master)
 [![Total Downloads](https://poser.pugx.org/sunrise/coder/downloads?format=flat)](https://packagist.org/packages/sunrise/coder)
