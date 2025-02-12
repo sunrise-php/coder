@@ -3,25 +3,19 @@ build:
   nodes:
     analysis:
       environment:
-        php: 8.4.2
+        php: 8.3.16
       tests:
         override:
           - php-scrutinizer-run
     coverage:
       environment:
-        php: 8.4.2
+        php: 8.3.16
       tests:
         override:
           - command: XDEBUG_MODE=coverage php vendor/bin/phpunit --coverage-clover coverage.xml
             coverage:
               file: coverage.xml
               format: clover
-    php84:
-      environment:
-        php: 8.4.2
-      tests:
-        override:
-          - command: composer test
     php83:
       environment:
         php: 8.3.16
