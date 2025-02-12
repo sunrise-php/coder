@@ -3,7 +3,7 @@ build:
   nodes:
     analysis:
       environment:
-        php: 8.2
+        php: 8.2.27
       tests:
         override:
           - php-scrutinizer-run
