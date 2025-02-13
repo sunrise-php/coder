@@ -14,7 +14,7 @@ composer require sunrise/coder
 
 ## How to use
 
-### Quick start
+### Quick Start
 
 ```php
 use Sunrise\Coder\CodecManager;
