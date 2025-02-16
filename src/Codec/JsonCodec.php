@@ -27,10 +27,10 @@ use const JSON_THROW_ON_ERROR;
 
 final class JsonCodec implements CodecInterface
 {
-    public const CONTEXT_KEY_DECODING_FLAGS = 'decoding_flags';
-    public const CONTEXT_KEY_DECODING_MAX_DEPTH = 'decoding_max_depth';
-    public const CONTEXT_KEY_ENCODING_FLAGS = 'encoding_flags';
-    public const CONTEXT_KEY_ENCODING_MAX_DEPTH = 'encoding_max_depth';
+    public const CONTEXT_KEY_DECODING_FLAGS = 'json_decoding_flags';
+    public const CONTEXT_KEY_DECODING_MAX_DEPTH = 'json_decoding_max_depth';
+    public const CONTEXT_KEY_ENCODING_FLAGS = 'json_encoding_flags';
+    public const CONTEXT_KEY_ENCODING_MAX_DEPTH = 'json_encoding_max_depth';
 
     private const DEFAULT_CODING_MAX_DEPTH = 512;
 

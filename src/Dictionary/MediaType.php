@@ -18,6 +18,7 @@ use Sunrise\Coder\MediaTypeInterface;
 enum MediaType: string implements MediaTypeInterface
 {
     case JSON = 'application/json';
+    case UrlEncoded = 'application/x-www-form-urlencoded';
 
     public function getIdentifier(): string
     {
