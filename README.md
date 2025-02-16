@@ -19,17 +19,23 @@ composer require sunrise/coder
 ```php
 use Sunrise\Coder\CodecManager;
 use Sunrise\Coder\Codec\JsonCodec;
+use Sunrise\Coder\Codec\UrlEncodedCodec;
 use Sunrise\Coder\Dictionary\MediaType;
 
 $codecManager = new CodecManager(codecs: [
     new JsonCodec(),
+    new UrlEncodedCodec(),
 ]);
 
 // Encoding result: {"foo": "bar"}
 $codecManager->encode(MediaType::JSON, ['foo' => 'bar']);
-
 // Decoding result: ['foo' => 'bar']
 $codecManager->decode(MediaType::JSON, '{"foo": "bar"}');
+
+// Encoding result: foo=bar
+$codecManager->encode(MediaType::UrlEncoded, ['foo' => 'bar']);
+// Decoding result: ['foo' => 'bar']
+$codecManager->decode(MediaType::UrlEncoded, 'foo=bar');
 ```
 
 ### PHP-DI definitions
@@ -41,6 +47,7 @@ use Sunrise\Coder\CodecManagerInterface;
 $containerBuilder = new ContainerBuilder();
 $containerBuilder->addDefinition(__DIR__ . '/../vendor/sunrise/coder/resources/definitions/coder.php');
 $containerBuilder->addDefinition(__DIR__ . '/../vendor/sunrise/coder/resources/definitions/codecs/json_codec.php');
+$containerBuilder->addDefinition(__DIR__ . '/../vendor/sunrise/coder/resources/definitions/codecs/url_encoded_codec.php');
 
 $container = $containerBuilder->build();
 
