@@ -1,4 +1,4 @@
-# A flexible data coder for encoding and decoding formats like JSON, YAML, and more.
+# A flexible data coder for encoding and decoding formats like JSON, YAML, and more
 
 ## Resources
 
