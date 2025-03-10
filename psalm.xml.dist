@@ -15,6 +15,7 @@
 
     <issueHandlers>
         <ClassMustBeFinal errorLevel="suppress" />
+        <MissingOverrideAttribute errorLevel="suppress" />
         <PossiblyUnusedMethod errorLevel="suppress" />
         <UnusedClass errorLevel="suppress" />
     </issueHandlers>
