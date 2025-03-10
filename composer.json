@@ -6,11 +6,11 @@
   "keywords": [
     "fenric",
     "sunrise",
-    "data",
     "coder",
     "encoder",
     "decoder",
-    "serializer"
+    "serializer",
+    "deserializer"
   ],
   "authors": [
     {
